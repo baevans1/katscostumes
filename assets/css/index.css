@@ -1,19 +1,27 @@
+/* On devices wider than 940px */
+@media(min-width: 940px) {
+}
 body {
   margin: 0;
-}
+  text-align: center;
+  }
 h1 {
   font-family: 'PT Sans Narrow Bold', sans-serif;
   font-size: 1.875em;
   color: #323232;
 }
-
-h2 {
-  font-family: 'PT Sans Narrow Bold', sans-serif;
-  font-size: 1.5em;
-  color: #00897f;
-  text-transform: uppercase;
-}
-
+nav h1{
+    font-family: 'PT Sans Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    color: #323232;
+    margin: 26px;
+    float: left;
+  }
+nav p {
+    font-family: 'PT Sans Regular', sans-serif;
+    font-size: .9em;
+    color: #323232;
+    }
 ul li {
   text-transform: uppercase;
   display: inline-block;
@@ -22,16 +30,27 @@ ul li {
   margin-right: 30px;
   margin-top: 15px;
   }
-
 #about {
   float: right;
   }
-
+.hero{
+  margin-bottom: 0;
+}
+h2 {
+    font-family: 'PT Sans Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    color: #00897f;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
 h3{
   font-family: 'PT Serif Regular', serif;
   font-size: 1em;
   line-height: 2em;
   color: #323232;
+  padding: 0;
+  margin-bottom: 0;
 }
 p{
   font-family: 'PT Serif Regular', serif;
@@ -39,37 +58,88 @@ p{
   line-height: 1.75em;
   color: #323232;
 }
-a{
+.mid-body h1 {
+  margin: 0;
+  margin-top: 80px;
+  margin-bottom: 45px;
+
+}
+#theshop {
+  margin: 0;
+  margin-bottom: 80px;
+  display: inline-block;
+  text-align: left;
+  width: 540px;
+  padding: 15px;
+}
+.katmavis {
+  display: inline-block;
+  width: 250px;
+  margin: 0;
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 30px;
+  background-color: #eeeeee;
+  text-align: left;
+}
+.katmavis p {
+  margin: 0;
+  margin-top: 25px;
+  line-height: 2em;
+}
+.katmavis h2 {
+  margin: 0;
+}
+
+.cats {
+  border-radius: 100%;
+  margin-right: 27.5px;
+  margin-left: 27.5px;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+div.info {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 443px;
+  padding: 0;
+  }
+.info h1 {
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 15px;
+  }
+#contact, #hours {
+  width: 250px;
+  height: 144px;
+  margin: 30px;
+  margin-bottom: 0;
+  text-align: left;
+  display: inline-block;
+  padding: 30px;
+  background-color: white;
+}
+span.days {
+  text-transform: uppercase;
+}
+#contact a{
   font-family: 'PT Serif Bold', serif;
   font-size: 1em;
   color: #f26522;
+  display: inline-block;
+  text-align: left;
+  text-decoration: none;
 }
-nav h1{
-  font-family: 'PT Sans Narrow Bold', sans-serif;
-  font-size: 1.5em;
-  color: #323232;
-  margin: 26px;
-  float: left;
-}
-nav p {
-  font-family: 'PT Sans Regular', sans-serif;
-  font-size: .9em;
-  color: #323232;
-  }
 footer h1 {
   font-family: 'PT Sans Narrow Bold', sans-serif;
   font-size: 1.25em;
-  color: #323232;
-}
-.cats {
-  border-radius: 100%;
-  margin-right: 55px;
+  color: #eeeeee;
+  margin: 0px;
+  padding: 51px;
+  background-color: #00897f;
+  text-align: center;
 }
 
 /* On devices wider than 660px */
 @media(min-width: 660px) {
-}
-
-/* On devices wider than 940px */
-@media(min-width: 940px) {
 }
