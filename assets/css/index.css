@@ -44,9 +44,6 @@ a {
   text-decoration: none;
   line-height: 2em;
 }
-img.hero-mobile, img.map-mobile {
-  display: none;
-}
 
 /*header and nav styles*/
 header h1 {
@@ -85,7 +82,7 @@ nav {
   width: 22%;
   padding: 30px;
   float: left;
-  margin: 30px;
+  margin: 30px 30px 0 30px;
 }
 
 .about, section.info {
@@ -98,9 +95,8 @@ nav {
   text-align: center;
   }
 .info {
-  padding: 80px 0 50px 0;
+  padding: 80px 0;
 }
-
 .contact {
   background-color: white;
 }
@@ -111,7 +107,6 @@ nav {
   display: inline-block;
   vertical-align: top;
 }
-
 
 /*cat images*/
 .cat-box {
@@ -125,7 +120,6 @@ img.cats {
   margin: 0 3%;
 }
 
-
 /*footer*/
 footer h1 {
   font-size: 1.25em;
@@ -133,4 +127,87 @@ footer h1 {
   color: #eee;
   background-color: #00897f;
   padding: 50px 0;
+}
+@media screen and (max-width:980px) {
+  .about, .contact {
+    width: 32%;
+  }
+}
+@media screen and (max-width:850px) {
+  .cats:first-child {
+    display: none;
+  }
+  .cat-titude h1 {
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+  .info {
+    padding: 40px 0 60px 0;
+  }
+  .cat-box {
+      margin: 50px 0;
+  }
+}
+
+@media screen and (max-width:660px) {
+body {
+  max-width: 100%;
+}
+/*header formatting*/
+  nav p, .info h1 {
+    display: none;
+  }
+  header h1 {
+    display: block;
+    text-align: center;
+  }
+  /*images formatting*/
+  img.hero {
+    object-fit: cover;
+    width: 750px;
+    height: 250px;
+    }
+  img.map {
+    object-fit: cover;
+    width: 750px;
+    height: 280px;
+  }
+  img.cats {
+    display: none;
+  }
+  img.cats:last-child {
+    display: block;
+  }
+  .about-boxes, .contact-boxes {
+    flex-wrap: wrap;
+  }
+  .about, .contact {
+    width: 100%;
+    float: none;
+    margin: 0;
+    padding: 20px 6% 30px 6%;
+  }
+  .contact {
+    background-color: #eee;
+  }
+  .info {
+    padding: 0;
+  }
+  .cat-titude h1 {
+    font-size: 1.6em;
+    padding: 30px 0;
+  }
+  .cat-titude {
+    margin-bottom: 35px;
+  }
+  h3 {
+  font-size: 1.25em;
+  }
+  .cat-titude {
+    padding: 0 6%;
+  }
+  p {
+    font-size: 1.1em;
+  }
+
 }
